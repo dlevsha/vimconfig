@@ -17,53 +17,29 @@ nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
 set nocompatible
-
 set ruler
-
 set showcmd
-
 set nu
-
 set incsearch
-
 set nohlsearch
-
 set scrolljump=7
-
 set scrolloff=7
-
 set novisualbell
 set t_vb=
-
-" source ~/.vim.local
-
 set hidden
-
-
 set ch=1
-
 set autoindent
-
-syntax on
-
 set backspace=indent,eol,start whichwrap+=<,>,[,]
-
 set expandtab
-
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-
 set statusline=%<%f%h%m%r\ %b\ %{&encoding}\ 0x\ \ %l,%c%V\ %P
 set laststatus=2
-
 set smartindent
-
 set fo+=cr
-
 set sessionoptions=curdir,buffers,tabpages
 
-" Add this line.
 call pathogen#infect()
 
 filetype plugin indent on
