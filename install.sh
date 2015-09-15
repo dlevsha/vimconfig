@@ -1,3 +1,7 @@
+if [ ! -d ~/.vim ]; then
+    mkdir ~/.vim
+fi
+
 if [ ! -d ~/.vim/autoload ]; then
     mkdir ~/.vim/autoload
 fi
@@ -23,5 +27,7 @@ git clone https://github.com/scrooloose/syntastic.git
 git clone git://github.com/ervandew/supertab.git
 git clone git://github.com/tpope/vim-surround.git
 
-mv ~/.vimrc ~/.vimrc.backup
-cp .vimrc ~/.vimrc
+if [ -f ~/.vimrc ]; then
+    mv ~/.vimrc ~/.vimrc.backup
+fi
+cp ~/vimconfig/.vimrc ~/.vimrc
